@@ -18,7 +18,7 @@ Now it's important to choose an appropriate [hardware partition](../../../slurm/
 
 
 ???+ "CLC workbench"
-      If you want to use the CLC workbench from a virtual desktop, you must use the node `axomamma`, because CLC is only licensed for this particular machine. Additionally, the maximum number of CPUs allowed per CLC instance is 64.
+      If you want to use the CLC workbench from a virtual desktop, you must use the node `axomamma`, because CLC is only licensed for this particular machine. Additionally, the maximum number of CPUs allowed per CLC instance is 64. You can find CLC in the menus.
 
 Lastly, you can give the job an appropriate name and choose when you would like to receive an email. Most users don't need to choose between different accounts, since your user will likely only belong to a single one, in which case just leave it as-is. Then click Launch!
 

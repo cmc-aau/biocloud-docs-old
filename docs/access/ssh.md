@@ -58,7 +58,7 @@ To avoid typing hostnames and user names constantly here's a template SSH config
 ```plaintext
 # nice-to-have global options that apply to all servers,
 # prevents disconnects on network glitches and wifi reconnects,
-# allows forwarding GUI apps to client
+# allows forwarding GUI apps to the client desktop etc
 Host *
   ServerAliveInterval 60
   ServerAliveCountMax 2
@@ -84,10 +84,19 @@ Host *.srv.aau.dk bio-os*
 Host bio-ospikachu01.srv.aau.dk
 Host bio-ospikachu02.srv.aau.dk
 Host bio-ospikachu03.srv.aau.dk
+
+# authenticate with GitHub using an SSH key if present
+Host github.com
+    HostName github.com
+    User git
+    Port 22
+    IdentityFile ~/.ssh/github
 ```
 
 ### SSH Public Key Authentication
-[SSH public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) offers a more secure way to connect to a server, and is also more convenient, since you don't have to type in your password every single time you log in or transfer a file. An SSH private key is essentially just a very long password that is used to authenticate with a server holding the cryptographically linked public key for your user (think of it as the lock for the private key). You can even add an additional layer of security by encrypting the private key itself using a password when generating the pair. Any SSH client that you choose to use will connect through the SSH program on your computer under the hood, so public key authentication will also apply to them if set up like below.
+[SSH public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) offers a more secure way to connect to a server, and is also more convenient, since you don't have to type in your password every single time you log in or transfer a file. An SSH private key is essentially just a very long password that is used to authenticate with a server holding the cryptographically linked public key for your user (think of it as the lock for the private key). You can even add an additional layer of security by encrypting the private key itself using a password when generating the pair. Any SSH client that you choose to use will connect through the SSH program on your computer under the hood, so public key authentication will also apply to them if set up like below. 
+
+If you also need to be able to connect to GitHub through SSH, you also need to use public key authentication, however a separate guide for that is available [here](../guides/git.md).
 
 #### Generating SSH Key Pairs
 This must be done locally for security reasons, so that the private key never leaves your computer. If you use a password manager (please do) like 1Password or bitwarden you can usually both generate and safely store and use SSH keys directly from the vault without it lying around in a file. It's important that the key is not generated using the default (usually) RSA type algorithm, because it's outdated and can be brute-forced easily with modern hardware, so please use for example the `ed25519` algorithm instead.

@@ -53,6 +53,9 @@ apptainer run -B /databases ubuntu_22.04.sif yourcommand --someoption somefile
 
 # mount at a different path inside the container
 apptainer run -B /databases:/some/other/path/databases ubuntu_22.04.sif yourcommand --someoption somefile
+
+# start a shell within the container
+apptainer shell ubuntu_22.04.sif
 ```
 
 For additional guidance see the [Apptainer usage guide](https://apptainer.org/docs/user/main/index.html). If you need to use a GPU with apptainer use the `--nvccli` flag, not `--nv`.

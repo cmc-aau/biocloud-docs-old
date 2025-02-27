@@ -38,6 +38,7 @@ nav:
       - guides/snakemake/tutorial.md
       - guides/snakemake/biocloud.md
     - guides/sshdslurm.md
+    - guides/git.md
   - storage.md
 theme:
   name: material
