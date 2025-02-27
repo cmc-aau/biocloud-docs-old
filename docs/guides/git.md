@@ -2,7 +2,7 @@
 This guide describes how to connect and authenticate with GitHub through SSH. It's a boiled down version of the official GitHub guide [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) covering only basic functionality, so if you need additional features go read that instead.
 
 
-## Connecting to GitHub from VS Code
+## Connecting from VS Code
 VS Code has a fantastic builtin source control feature with everything you need. If you only need to use [Git in VS Code](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git), you don't need to do much else than just sign in with GitHub by clicking on the "Accounts" icon in the bottom left corner:
 
 ![signinwithgithub](img/github_vscode_accounts_menu.png)
