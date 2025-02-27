@@ -7,10 +7,10 @@ VS Code has a fantastic builtin source control feature with everything you need.
 
 ![signinwithgithub](img/github_vscode_accounts_menu.png)
 
-This will also synchronize all your settings across devices. Note that authenticating with GitHub is not possible when using the [Code Server app](webportal/apps/coder.md), in which case you must read on.
+This will also synchronize all your settings across devices. Note that authenticating with GitHub in this way is not possible when using the [Code Server app](webportal/apps/coder.md), in which case you must read on.
 
 ## Connecting through SSH
-To be able to commit and push changes to GitHub repositories (or to pull private repositories) through the git command line or from any application with git support, you must connect through SSH using [public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) very similarly to how you would connect to a [login node through SSH using a key-pair](../access/ssh.md#ssh-public-key-authentication). GitHub simply doesn't support password authentication anymore, because it's very insecure.
+To be able to commit and push changes to GitHub repositories (or to pull private repositories) through the git command line, or from practically any application with git support, you must connect through SSH using [public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) very similarly to how you would connect to a [login node through SSH using a key-pair](../access/ssh.md#ssh-public-key-authentication). GitHub simply doesn't support password authentication for SSH access anymore because it's very insecure. The only alternative to SSH keys is [personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), but they are more suited for fine-grained control within large organizations and non-interactive API integrations etc.
 
 ### Generate an SSH key pair
 
