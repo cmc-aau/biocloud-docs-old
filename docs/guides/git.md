@@ -10,7 +10,7 @@ VS Code has a fantastic builtin source control feature with everything you need.
 This will also synchronize all your settings across devices. Note that authenticating with GitHub in this way is not possible when using the [Code Server app](webportal/apps/coder.md), in which case you must read on.
 
 ## Connecting through SSH
-To be able to commit and push changes to GitHub repositories (or to pull private repositories) through the git command line, or from practically any application with git support, you must connect through SSH using [public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) very similarly to how you would connect to a [login node through SSH using a key-pair](../access/ssh.md#ssh-public-key-authentication). GitHub simply doesn't support password authentication for SSH access anymore because it's very insecure. The only alternative to SSH keys is [personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), but they are more suited for fine-grained control within large organizations and non-interactive API integrations etc.
+To be able to commit and push changes to GitHub repositories (or to pull private repositories) through the git command line, or from practically any application with git support, you must connect through SSH using [public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) very similarly to how you would [connect to a login node through SSH using a key-pair](../access/ssh.md#ssh-public-key-authentication). GitHub simply doesn't support password authentication for SSH access anymore because it's very insecure. The only alternative to SSH keys is [personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), but they are more suited for fine-grained control within large organizations and non-interactive API integrations etc.
 
 ### Generate an SSH key pair
 
@@ -24,7 +24,7 @@ chmod 400 ~/.ssh/github
 ```
 
 ### Add the public key to GitHub
-Now you must add the public key file to GitHub to allow access (think of it as "the lock", and the private key file "the key" to it). Copy the contents of the public key file using a terminal editor, fx `nano ~/.ssh/github.pub` (use `CTRL/CMD+SHIFT+C`, and NOT `CTRL/CMD+C`, which means interrupt). Then sign in to [github.com](https://github.com), go to settings by clicking your profile picture in the top right corner, then find "SSH and GPG keys" in the menus under "Access":
+Now you must add the public key file on GitHub to allow access (think of the public key as "the lock", and the private key "the key" to it). Copy the contents of the public key file using a terminal editor, fx `nano ~/.ssh/github.pub` (use `CTRL/CMD+SHIFT+C`, and NOT `CTRL/CMD+C`, which in a terminal means interrupt). Then sign in to [github.com](https://github.com), go to settings by clicking your profile picture in the top right corner, and find "SSH and GPG keys" in the menus under "Access":
 
 ![githubsshkeys](img/github_settings_ssh.png)
 
