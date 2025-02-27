@@ -55,5 +55,3 @@ Now test the connection by running `ssh -T github.com`. If you see the below mes
 $ ssh -T github.com
 Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 ```
-
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
