@@ -22,6 +22,9 @@ Download and install using the instructions on the official [website](https://co
 4. Connect and log in with your SSH password.
 5. Once connected open a project or workspace folder (or create one while doing so) by clicking File -> Open Folder (CTRL+k CTRL+o, CMD instead of CTRL if on macOS) to start your work
 
+!!! warning "Project folders in VSCode"
+      When connecting using VSCode, please only open individual project folders and not your entire home folder. If you do VSCode may scan **all files** in your home folder, which can leave a forever-running process on the login-node consuming all the CPUs available.
+
 ### MobaXterm
 A more old-school and Windows-only client is MobaXterm. It's not as full-featured as VS Code, but is more lightweight.
 
