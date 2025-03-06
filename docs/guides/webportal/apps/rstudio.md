@@ -33,6 +33,9 @@ You can now start working:
 
 ![rstudio inside](img/rstudio_inside.png)
 
+???+ info "Closing the window"
+    If you close the window or browser tab while something is running, it will continue to run in the background. You can always reconnect to it by clicking the **Connect to RStudio Server** button again.
+
 ## Stopping the app
 When you are done with your work, it's important to stop the app to free up resources for other users. Before you do that, however, it's a good idea to first click the little red button inside RStudio in the top right corner to shut down the R session gracefully:
 

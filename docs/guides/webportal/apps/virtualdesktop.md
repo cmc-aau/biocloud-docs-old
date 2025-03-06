@@ -39,6 +39,9 @@ Ensure that the **Image Quality** slider is maximized. You don't need to adjust 
 
 You can now start running anything you want, browse the Applications menu at the top left to find and launch your software.
 
+???+ info "Closing the window"
+    If you close the window or browser tab while something is running, it will continue to run in the background. You can always reconnect to it by clicking the **Launch Virtual Desktop** button again.
+
 ## Stopping the app
 When you are done with your work, it's important to stop the app to free up resources for other users. You can do that by either clicking **Log Out** inside the virtual desktop in the top right corner:
 

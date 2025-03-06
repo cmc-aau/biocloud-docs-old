@@ -33,6 +33,9 @@ You can now start working:
 
 ![code inside](img/code_inside.png)
 
+???+ info "Closing the window"
+    If you close the window or browser tab while something is running, it will continue to run in the background. You can always reconnect to it by clicking the **Connect to Code Server** button again.
+
 ## Stopping the app
 When you are done with your work, it's important to stop the app to free up resources for other users. You can do that by clicking the red **Cancel** button under **My Interactive Sessions**, see the screenshots above.
 
