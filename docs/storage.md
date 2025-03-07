@@ -5,14 +5,14 @@ Data on the Ceph network storage cluster is lightly compressed at rest, so manua
 
 ## Network storage mount points
 
-| Mount point | Permissions | Contents |
-| --- | --- | --- |
-| `/home` | Read/write on your own home folder only | All data for individual projects and generally most things should go here |
-| `/projects` | Read/write | All data for shared projects should go here |
-| `/databases` | Read-only | Various databases required for bioinformatic tools |
-| `/raw_data` | Read-only | Raw data (mostly from DNA sequencing) that should never be touched nor deleted |
-| `/incoming` | Read/write | Incoming raw data that should be moved and organized in `/raw_data` as soon as possible |
-| `/nanopore` | Read/write | Incoming raw data from nanopore sequencing that should be moved and organized in `/raw_data` as soon as possible. This mount **will be removed** in the near future, please use `/incoming` instead. |
+| Mount point | Contents |
+| --- | --- |
+| `/home` | All data for individual projects and generally most things should go here |
+| `/projects` | All data for shared projects should go here |
+| `/databases` | Various databases required for bioinformatic tools |
+| `/raw_data` | Raw data (mostly from DNA sequencing) |
+
+Please always organize EVERYTHING under `/raw_data/` and `/projects` by `PI/project/(sub-project)` subfolders.
 
 ???+ "Max file size"
      There is a max file size of 4TB on the Ceph network cluster, which cannot be increased, [details here](https://docs.ceph.com/en/latest/cephfs/administration/#maximum-file-sizes-and-performance).
