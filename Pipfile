@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pygments = "*"
 mkdocs = "*"
 mkdocs-material = "*"
-pygments = "*"
 
 [dev-packages]
 

@@ -43,7 +43,7 @@ If you add the servers to your [SSH config file](#ssh-config-file) the server ho
 For a simple terminal you can on Windows use for example [PuTTY](https://www.putty.org/) or [msys2](https://www.msys2.org/), and the integrated terminal and the `ssh` command itself directly if on Linux or macOS (also Windows). Type `ssh email@hostname` like above to connect immediately or just the hostname if you've added them to the [SSH config file](#ssh-config-file).
 
 ## Transferring files
-Both VS Code and MobaXterm support file transfers, but you can also use other GUI apps like [FileZilla](https://filezilla-project.org/download.php) or [WinSCP](https://winscp.net/eng/index.php). When just using a terminal there are several tools like `scp`, `rsync`, `rclone`, or `sftp`, all of which connect through the SSH protocol. You can also browse and transfer files through the [interactive web portal](webportal.md#transferring-files) described on the next page.
+Both VS Code and MobaXterm support file transfers, but you can also use other GUI apps like [FileZilla](https://filezilla-project.org/download.php) or [WinSCP](https://winscp.net/eng/index.php). When just using a terminal there are several tools like `scp`, `rsync`, `rclone`, or `sftp`, all of which connect through the SSH protocol. You can also browse and transfer files through the [interactive web portal](webportal.md) described on the next page.
 
 ## External access
 To access the servers while not directly connected to any AAU or [eduroam](https://eduroam.dk/) network there are two options. Either you connect through VPN, which will route all your traffic through AAU, or you can use the SSH gateway through `sshgw.aau.dk` for SSH connections only. If you need virtual desktop access only VPN will work (for now).
