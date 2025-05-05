@@ -16,7 +16,7 @@ Before submitting a job you must carefully choose the correct hardware partition
 
 ## Partitions
 ### The `shared` partition
-The `shared` partition is the shared partition and is overprovisoned with a factor of 3, meaning each CPU can run up to 3 jobs at once. This is ideal for low to medium (<75%) efficiency, low to medium memory, and interactive jobs, as well as I/O jobs, that don't fully utilize the allocated CPU's 100% at all times. It's **highly recommended** to use this partition for most CPU intensive jobs unless you need lots of memory, or have taken extra care [optimizing the CPU efficiency](efficiency.md) of the job(s), in which case you can use the `general` or `high-mem` partitions instead and finish the jobs faster. Due to over-subscription it's actually possible to allocate a total of 1056 CPUs for jobs on this partition, however with less memory. The job time limit for this partition is 7 days.
+The `shared` partition is the shared partition and is over-subscribed with a factor of 3, meaning each CPU can run up to 3 jobs at once. This is ideal for low to medium (<75%) efficiency, low to medium memory, and interactive jobs, as well as I/O jobs, that don't fully utilize the allocated CPU's 100% at all times. It's **highly recommended** to use this partition for most CPU intensive jobs unless you need lots of memory, or have taken extra care [optimizing the CPU efficiency](efficiency.md) of the job(s), in which case you can use the `general` or `high-mem` partitions instead and finish the jobs faster. Due to over-subscription it's actually possible to allocate a total of 1056 CPUs for jobs on this partition, however with less memory. The job time limit for this partition is 7 days.
 
 **Max memory per CPU: 1.5GB**
 
