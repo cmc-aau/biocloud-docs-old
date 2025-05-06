@@ -10,7 +10,7 @@ To install software through conda, it must always be done in an environment. Con
 
 ```
 # create+activate+install
-conda env create -n myproject
+conda create -n myproject
 conda activate myproject
 conda install -c bioconda somepkg1=1.0 somepkg2=2.0
 
