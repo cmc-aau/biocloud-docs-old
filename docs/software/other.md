@@ -13,7 +13,7 @@ As mentioned in the [job submission guide](../slurm/jobsubmission.md#graphical-a
 To run things in a virtual desktop, simply open a terminal and run `bash /software/biocloud-software/arb/run.sh`.
 
 ## CLC
-CLC is licensed software tied to specific machines and is only available through a [virtual desktop](../guides/webportal/apps/virtualdesktop.md) on nodes with the `clc` [node feature](../slurm/partitions.md#the-interactive-partition) listed. So ensure that you write `--constraint clc` in the "Additional job options" field. You can then find CLC in the menus.
+CLC is licensed to a single machine and is only available through a [virtual desktop](../guides/webportal/apps/virtualdesktop.md) on `axomamma`. So ensure that you fill in the `Nodelist` field. You can then find CLC in the menus.
 
 ## AlphaFold
 [AlphaFold](https://github.com/google-deepmind/alphafold) is quite complex to install and run. It runs through containers, but through a python wrapper script. Copy the SLURM sbatch script from `/shared_software/biocloud-software/alphafold_singularity/sbatch_example.sh` and adjust to suit your needs. `AlphaFold` benefits from GPU-accelerated servers, but can also run on regular CPUs. So submit to the appropriate partition.
