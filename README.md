@@ -1,4 +1,4 @@
-# Documentation website for the BioCloud HPC at AAU
+# (old) Documentation website for the BioCloud HPC at AAU
 Built using [MkDocs](https://www.mkdocs.org/) with the [material theme](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
 Any changes pushed to GitHub will trigger a GitHub action that will automatically build and publish the website, so don't use `mkdocs build` or `mkdocs gh-deploy`.
